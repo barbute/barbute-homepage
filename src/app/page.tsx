@@ -8,7 +8,7 @@ export default function Home() {
       {/* Spacer */}
       <div className="h-16"></div>
       {/* mx-auto - margin auto */}
-      <article className="flex flex-col justify-center items-center max-w-3xl mx-auto">
+      <article className="flex flex-col justify-center items-center max-w-2xl mx-auto">
         <Section 
           title={"About"} 
           text={[
