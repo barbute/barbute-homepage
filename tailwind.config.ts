@@ -11,8 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        nav: "#20202380",
+        accent: "#FFCF00",
       },
     },
+    borderWidth: {
+      "0.5": "0.5px"
+    }
   },
   plugins: [],
 } satisfies Config;
