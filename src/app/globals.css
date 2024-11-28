@@ -5,12 +5,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #FFCF00;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #171717;
     --foreground: #ededed;
+    --accent: #FFCF00;
   }
 }
 
@@ -18,4 +20,12 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  color: var(--accent);
+}
+
+.link:hover {
+  text-decoration: underline;
 }
