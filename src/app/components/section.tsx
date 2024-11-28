@@ -8,7 +8,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ title, text }) => {
   return (
-    <div className="bg-pink-600">
+    <div className="my-4">
       <h2 className="text-2xl mb-2 font-bold">
         {title}
       </h2>
