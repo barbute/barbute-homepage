@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import clsx from "clsx";
+import Logo from "./logo";
 
 const Navbar: React.FC = () => {
   // Get current path (page)
@@ -15,15 +16,22 @@ const Navbar: React.FC = () => {
   ]
 
   return (
-    <nav className="backdrop-blur-sm bg-gray-800 text-white">
-      <div className="max-w-7x1 mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 bg-background backdrop-blur-sm text-foreground font-medium border-solid border-b-0.5 border-foreground">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Display items as flex; align items to center (vertical); justify content to space between (even distribution)  */}
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
+          <Link
+            key={"/"}
+            href={"/"}
+          >
+            <Logo />
+          </Link>
 
           {/*--- Nav links ---*/}
-          {/* Hide links if page is too small (smaller than md-768px */}
-          <div className="hidden md:block">
-            {/* Set list of links to display as flex, with a spacing of 1rem (16px) */}
+          {/* Hide links; if page is too small (smaller than md-768px */}
+          <div className="hidden md:block justify-self-end">
+            {/* Set list of links to display as flex; with a spacing of 1rem (16px) */}
             <div className="flex space-x-4">
               {/* TODO Maybe move this chunk to separate class for convienence */}
               {navLinks.map((link) => (
@@ -34,7 +42,7 @@ const Navbar: React.FC = () => {
                     "hover:underline underline-offset-8",
                     {
                       // Apply style if current link is the page we are on
-                      "text-amber-400": pathname === link.href,
+                      "text-accent": pathname === link.href,
                     },
                   )}
                 >
