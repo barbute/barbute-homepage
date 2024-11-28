@@ -1,10 +1,8 @@
-import Navbar from "./components/navbar";
 import Section from "./components/section";
 
 export default function Home() {
   return (
     <>
-      <Navbar/>
       {/* Spacer */}
       <div className="h-16"></div>
       {/* mx-auto - margin auto */}
