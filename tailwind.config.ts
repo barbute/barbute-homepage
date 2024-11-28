@@ -16,7 +16,9 @@ export default {
       },
     },
     borderWidth: {
-      "0.5": "0.5px"
+      "0.1": "0.1px",
+      "0.25": "0.25px",
+      "0.5": "0.5px",
     }
   },
   plugins: [],

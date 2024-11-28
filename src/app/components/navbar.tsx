@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-background backdrop-blur-sm text-foreground font-medium border-solid border-b-0.5 border-foreground">
+    <nav className="fixed backdrop-blur-lg top-0 left-0 right-0 text-foreground font-medium">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Display items as flex; align items to center (vertical); justify content to space between (even distribution)  */}
         <div className="flex items-center justify-between h-16">
