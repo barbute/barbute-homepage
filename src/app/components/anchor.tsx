@@ -7,7 +7,7 @@ interface AnchorProps {
 
 const Anchor: React.FC<AnchorProps> = ({ link, text }) => {
   return (
-    <a className="text-accent hover:decoration-solid" href={link}>{text}</a>
+    <a className="text-accent hover:underline hover:decoration-solid" href={link}>{text}</a>
   )
 };
 
