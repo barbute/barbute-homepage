@@ -4,6 +4,7 @@
 
 :root {
   --background: #ffffff;
+  --background-transparent: rgba(23, 23, 23, 0.1);
   --foreground: #171717;
   --accent: #FFCF00;
 }
@@ -11,6 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #171717;
+    --background-transparent: rgba(255, 255, 255, 0.1);
     --foreground: #ededed;
     --accent: #FFCF00;
   }

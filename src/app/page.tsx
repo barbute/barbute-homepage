@@ -1,3 +1,4 @@
+import Callout from "./components/callout";
 import Section from "./components/section";
 
 export default function Home() {
@@ -8,6 +9,12 @@ export default function Home() {
 
       {/* Main */}
       <article className="flex flex-col justify-center items-center max-w-lg mx-auto">
+        <Callout 
+          icon="👋" 
+          text={[
+            "Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia accumsan dictumst pellentesque vestibulum risus.",
+          ]}
+        />
         <Section 
           title={"About"} 
           text={[

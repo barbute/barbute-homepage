@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        transparent: "var(--background-transparent)",
         nav: "#20202380",
         accent: "#FFCF00",
       },
