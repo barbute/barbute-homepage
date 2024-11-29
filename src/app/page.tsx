@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       {/* Spacer */}
-      <div className="h-16"></div>
+      <div className="h-24"></div>
 
       {/* Main */}
       <article className="flex flex-col justify-center items-center max-w-lg mx-auto">
