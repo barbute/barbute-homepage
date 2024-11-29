@@ -1,15 +1,26 @@
 import Anchor from "./components/anchor";
 import Callout from "./components/callout";
 import Section from "./components/section";
+import Image from "next/image";
+import barbutehero from "../public/barbute-hero.jpg"
 
 export default function Home() {
   return (
     <>
       {/* Spacer */}
-      <div className="h-24"></div>
+      <div className="h-20"></div>
 
       {/* Main */}
       <article className="flex flex-col justify-center items-center max-w-lg mx-auto">
+        <div className="relative mb-3 w-1/5 h-1/5">
+          <Image
+            src={barbutehero}
+            alt="Image of a building in rome."
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+          />
+        </div>
         <Callout 
           icon="👋"
           text={[
