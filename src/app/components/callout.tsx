@@ -4,7 +4,7 @@ interface CalloutProps {
   // Pass an emoji as an icon for now, might add support for custom icons now
   icon: string
   // Each new index in the array is a new paragraph
-  text: string[]
+  text: any[]
 }
 
 const Callout: React.FC<CalloutProps> = ({ icon, text }) => {
