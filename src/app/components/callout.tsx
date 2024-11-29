@@ -11,15 +11,15 @@ const Callout: React.FC<CalloutProps> = ({ icon, text }) => {
   return (
     <div className="flex flex-col justify-center px-4 py-4 w-full bg-transparent rounded-lg">
       <div className="flex gap-3.5">
-        <p>{icon}</p>
+        <div>{icon}</div>
         <div className="flex flex-col">
           {text.map((paragraph, index) => (
-            <p
+            <div
               key={index} // Use index as key for simplicity
               className="leading-relaxed mb-1 last:mb-0"
             >
               {paragraph}
-            </p>
+            </div>
             ))
           }
         </div>

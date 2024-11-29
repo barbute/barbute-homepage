@@ -11,9 +11,9 @@ export default function Home() {
       {/* Main */}
       <article className="flex flex-col justify-center items-center max-w-lg mx-auto">
         <Callout 
-          icon="👋" 
+          icon="👋"
           text={[
-            "Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia accumsan dictumst pellentesque vestibulum risus.",
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Cubilia accumsan dictumst pellentesque vestibulum risus.</p>,
           ]}
         />
         <Section 
