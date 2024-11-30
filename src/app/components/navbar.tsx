@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
           {/*--- Nav links ---*/}
           {/* Hide links; if page is too small (smaller than md-768px */}
-          <div className="hidden md:block justify-self-end">
+          <div className="hidden sm:block justify-self-end">
             {/* Set list of links to display as flex; with a spacing of 1rem (16px) */}
             <div className="flex space-x-4">
               {/* TODO Maybe move this chunk to separate class for convienence */}
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
                     },
                   )}
                 >
-                  <p className="hidden md:block">{link.name}</p>
+                  <p className="hidden sm:block">{link.name}</p>
                 </Link>
               ))}
             </div>

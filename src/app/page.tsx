@@ -12,12 +12,13 @@ export default function Home() {
 
       {/* Main */}
       <article className="flex flex-col justify-center items-center max-w-lg mx-auto">
-        <div className="relative mb-3 w-1/5 h-1/5">
+        <div className="mb-3">
           <Image
             src={barbutehero}
             alt="Image of a building in rome."
-            layout="fill"
-            objectFit="cover"
+            // NOTE Use this to size the image, then apply tailwind
+            sizes="(max-width: 4032px) 100vw, (max-height: 3024px) 100vh"
+            // You can only round the borders of the image with this
             className="rounded-lg"
           />
         </div>
