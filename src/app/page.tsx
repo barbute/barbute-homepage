@@ -65,7 +65,7 @@ export default function Home() {
           title={"Work"} 
           content={[
             <p className="font-bold text-lg">High School Robotics</p>,
-            <p>On the <Anchor link="https://www.prosperengineeringteam.com" text="Prosper Engineering Team"/> I programmed control systems for robots designed to compete in the <Anchor link="https://www.firstinspires.org/robotics/frc" text="First Robotics Competition (FRC)"/>. The robot programs were written in Java.</p>,
+            <p>On the <Anchor link="https://www.prosperengineeringteam.com" content="Prosper Engineering Team"/> I programmed control systems for robots designed to compete in the <Anchor link="https://www.firstinspires.org/robotics/frc" content="First Robotics Competition (FRC)"/>. The robot programs were written in Java.</p>,
             <div className="flex flex-col justify-center">
               {/* Entry */}
               <div className="flex items-center mb-3">
