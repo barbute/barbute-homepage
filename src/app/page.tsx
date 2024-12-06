@@ -3,6 +3,7 @@ import Callout from "./components/callout";
 import Section from "./components/section";
 import Image from "next/image";
 import barbutehero from "../public/barbute-hero.jpg"
+import HistoryTable from "./components/history-table";
 
 export default function Home() {
   return (
@@ -107,6 +108,7 @@ export default function Home() {
             </div>,            
           ]}
         />
+        <HistoryTable title="" rows={[]}/>
       </article>
     </>
   );
