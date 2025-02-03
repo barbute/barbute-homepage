@@ -1,28 +1,55 @@
 :root {
-    --background-color: white;
+    --background-color: rgb(240, 240, 240);
     --font-color: #0D0D0D;
     --primary-color: #e9950c;
+    --secondary-color: rgb(240, 240, 240, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #0D0D0D;
-        --font-color: white;
+        --font-color: rgb(240, 240, 240);
         --primary-color: #e9950c;
+        --secondary-color: rgb(240, 240, 240, 0.1);
     }
 }
 
-body {
+.main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     margin: 0px;
-    padding: 0px 10vw;
+    padding: 0px 20vw;
 
     background-color: var(--background-color);
     color: var(--font-color);
 
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: medium;
+}
+
+.name-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    margin: 10px;
+    padding: 10px;
+
+    width: 600px;
+
+    border-radius: 8px;
+
+    background-color: var(--secondary-color);
+}
+
+.profile-picture {
+    height: 128px;
+    width: 128px;
+
+    /* Setting the radius to 50% makes it a circle */
+    border-radius: 50%;
 }
