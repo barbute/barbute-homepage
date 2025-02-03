@@ -1,0 +1,94 @@
+:root {
+    --background-color: rgb(240, 240, 240);
+    --font-color: #0D0D0D;
+    --primary-color: #f5bf2b;
+    --secondary-color: rgb(240, 240, 240, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #0D0D0D;
+        --font-color: rgb(240, 240, 240);
+        --primary-color: #f5bf2b;
+        --secondary-color: rgb(240, 240, 240, 0.1);
+    }
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(./public/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    margin: 0px;
+    padding: 0px 40vw;
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.name-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    margin: 10px;
+    padding: 14px 16px;
+
+    width: 450px;
+
+    border-radius: 12px;
+
+    background-color: var(--secondary-color);
+}
+
+.profile-picture {
+    height: 128px;
+    width: 128px;
+
+    /* Setting the radius to 50% makes it a circle */
+    border-radius: 50%;
+}
+
+.section {
+    width: 450px
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.button {
+    margin: 10px;
+    padding: 12px 20px;
+
+    border-radius: 12px;
+
+    font-weight: normal;
+    text-decoration: none;
+
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.button:hover {
+    background-color: #f5bf2be3;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
