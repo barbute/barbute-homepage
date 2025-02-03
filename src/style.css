@@ -1,0 +1,28 @@
+:root {
+    --background-color: white;
+    --font-color: #0D0D0D;
+    --primary-color: #e9950c;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #0D0D0D;
+        --font-color: white;
+        --primary-color: #e9950c;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px 10vw;
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
