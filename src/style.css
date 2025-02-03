@@ -85,3 +85,10 @@ a {
 .button:hover {
     background-color: #f5bf2be3;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
