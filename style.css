@@ -2,7 +2,7 @@
     --background-color: rgb(240, 240, 240);
     --font-color: #0D0D0D;
     --primary-color: #f5bf2b;
-    --secondary-color: rgb(240, 240, 240, 0.1);
+    --secondary-color: rgba(44, 44, 44, 0.1);
 
     --standard-margin: 10px;
 }
@@ -69,6 +69,7 @@
 .section {
     /* width: 450px */
     margin: var(--standard-margin);
+    padding: 0px 2px;
 }
 
 a {
