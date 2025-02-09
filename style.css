@@ -3,6 +3,8 @@
     --font-color: #0D0D0D;
     --primary-color: #f5bf2b;
     --secondary-color: rgb(240, 240, 240, 0.1);
+
+    --standard-margin: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,6 +13,8 @@
         --font-color: rgb(240, 240, 240);
         --primary-color: #f5bf2b;
         --secondary-color: rgb(240, 240, 240, 0.1);
+
+        --standard-margin: 10px;
     }
 }
 
@@ -26,8 +30,10 @@
     align-items: center;
     gap: 24px;
 
-    margin: 0px;
-    padding: 0px 40vw;
+    max-width: 470px;
+
+    margin: auto;
+    padding: 0px 0vw;
 
     background-color: var(--background-color);
     color: var(--font-color);
@@ -42,10 +48,10 @@
     align-items: center;
     gap: 24px;
 
-    margin: 10px;
+    margin: var(--standard-margin);
     padding: 14px 16px;
 
-    width: 450px;
+    /* width: 450px; */
 
     border-radius: 12px;
 
@@ -61,7 +67,8 @@
 }
 
 .section {
-    width: 450px
+    /* width: 450px */
+    margin: var(--standard-margin);
 }
 
 a {
